@@ -1,0 +1,423 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Serif JP' , serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+.header_all {
+  width: 100%;
+  background-color: rgb(247, 248, 211,0);
+  height: 90px;
+  position: fixed;
+  z-index: 3;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#header_nav{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.8);
+  transition: .7s;
+  z-index: 3;
+  overflow: scroll;
+}
+
+#header_nav ul{
+  padding-top: 80px;
+}
+
+#header_nav ul li{
+  list-style-type: none;
+  font-size: 40px;
+}
+
+#header_nav a{
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin:  15px;
+  padding: 10px;
+  transition: .5s;
+  text-align: center;
+  font-weight: bold;
+}
+
+#header_nav li a:hover{
+  color: #ffffff;
+  background: rgb(122, 157, 150, 0.8);
+  border-bottom: none;
+}
+
+#hamburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  transition: 1s;
+  z-index: 3;
+}
+
+.inner_line {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  transition: 1s;
+  border-radius: 4px;
+}
+
+#line1 {
+  top: 0;
+}
+#line2 {
+  top: 20px;
+}
+#line3 {
+  bottom: 0px;
+}
+
+.in{
+  transform: translateX(-100%);
+}
+.line_1,.line_2,.line_3{
+  background: #000000;
+}
+.line_1 {
+  transform:translateY(20px) rotate(-45deg);
+  top: 0;
+}
+.line_2 {
+  opacity: 0;
+}
+.line_3 {
+  transform:translateY(-20px) rotate(45deg);
+  bottom: 0;
+}
+
+.top_all {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  background: url("../img/woman3.jpg") no-repeat center;
+  background-color: rgb(202, 228, 219, 0.8);
+}
+
+.top_all::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(122, 157, 150, 0.1);
+}
+
+.top_inner {
+  position: absolute;
+  text-align: left;
+  z-index: 2;
+  top: 55%;
+  left: 32%;
+  transform: translate(-50%, 50%);
+}
+
+.top_inner h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.top_inner p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.top_inner small {
+  color: #ffffff;
+}
+
+.section {
+  padding: 150px 0;
+  border-top: solid 3px #fe9;
+}
+
+.section:nth-of-type(odd) {
+  background-color: rgba(122, 157, 150, 0.6);
+}
+
+.about_img {
+  position: relative;
+}
+
+.about_img::after {
+  content: "";
+  position: absolute;
+  background: url("../img/woman4.jpg") no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.concept_img {
+  position: relative;
+}
+
+.concept_img::after {
+  content: "";
+  position: absolute;
+  background: url("../img/woman2.jpg") no-repeat center;
+  background-size: cover;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.descript {
+  width: 40%;
+  height: 50%;
+}
+
+.descript_right {
+  margin-left: 60%;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  line-height: 1.4;
+  font-size: 40px;
+  font-weight: bold;
+  color: #555;
+  border-left: solid 4px #fe9;
+}
+
+.title span {
+  display: block;
+  font-size: 20px;
+}
+
+.txt h3 {
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.txt p {
+  color: #555;
+}
+
+.txt p strong {
+  font-weight: bold;
+  color: #555;
+  background: linear-gradient(transparent 60%, #fe9);
+}
+
+.frame {
+  display: inline-block;
+  width: 350px;
+  height: 100%;
+  background-color: #cae4db;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.txt h3 {
+  margin-bottom: 30px;
+}
+
+.txt h3 span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.sub_title {
+  position: relative;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.sub_title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  background-color: #333;
+  width: 40%;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.sub_title span {
+  position: relative;
+  padding-right: 10px;
+}
+
+.photo {
+  width: 340px;
+  height: 220px;
+}
+
+.price {
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  padding-top: 15px;
+}
+
+.price span {
+  margin-right: 5px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.price em {
+  font-style: italic;
+  font-size: 45px;
+}
+
+/* .frame_all { 
+  display: flex; 
+} */
+
+.frame_profile {
+  display: inline-table;
+  width: 30%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin: 0 0 50px 50px;
+  padding: 40px;
+}
+
+.frame_profile h3 {
+  margin-bottom: 0;
+}
+
+.profile_bg { 
+  background-color: #fff; 
+  height: 460px; 
+}
+
+/* .intro {
+  display: flex;
+} */
+
+/* .intro_img {
+  padding-right: 40px;
+} */
+
+
+.txt table th {
+  padding-right: 10px;
+  border-right: solid 3px #fe9;
+}
+
+.txt table td {
+  padding-left: 10px;
+}
+
+.blog_block {
+  display: inline-table;
+  margin: 5px;
+}
+
+.blog_block img {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.blog_block img:hover {
+  opacity: .6;
+}
+
+.blog_body {
+  margin-top: 10px;
+}
+
+.blog_body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+}
+
+.blog_body p {
+  font-size: 14px;
+  color: #555;
+}
+
+.button {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(220, 172, 16, 0.6);
+  border-radius: 10px;
+  width: 25%;
+  margin: 0 auto 150px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #cae4db;
+}
+
+.button a {
+  font-size: 18px;
+  color: #555;
+}
+
+.bottom {
+  background-color: #475855;
+  padding: 30px 0;
+  text-align: center;
+  color: #eee;
+}
+
+.footer_sns {
+  text-align: center;
+}
+
+.footer_sns li {
+  list-style: none;
+}
+
+.footer_sns li a img {
+  width: 70px;
+}
